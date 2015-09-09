@@ -1,0 +1,103 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AR	Makefile	/^AR=$(CROSS)ar$/;"	m
+BASEDIR	Makefile	/^BASEDIR=$(shell pwd)$/;"	m
+BUF_SIZE	main.c	23;"	d	file:
+CC	Makefile	/^CC=$(CROSS)gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS=-Wno-unused-but-set-variable -g $(INCDIR) -DHAVE_LTE_INTERFACE$/;"	m
+CPP	Makefile	/^CPP=$(CROSS)g++$/;"	m
+CROSS	Makefile	/^CROSS=\/home_ssd\/jong2ry\/VOS\/m2mg30_openwrt\/buildroot\/staging_dir\/toolchain-atmel_sam9x\/bin\/arm-openwrt-linux-uclibcgnueabi-$/;"	m
+CROSS	Makefile	/^CROSS=\/usr\/local\/Cavium_Networks\/OCTEON-SDK-2.3\/tools\/bin\/mips64-octeon-linux-gnu-$/;"	m
+CROSS	Makefile	/^CROSS=\/usr\/local\/marvell\/mv6281\/sdk\/3.2\/bin\/arm-mv5sft-linux-gnueabi-$/;"	m
+CROSS	Makefile	/^CROSS=\/usr\/local\/sdk\/atmel\/sam9g25\/sdk\/3.2\/bin\/arm-mv5sft-linux-gnueabi-$/;"	m
+DEV_MTD4_PATH	main.c	31;"	d	file:
+ERROR	main.c	19;"	d	file:
+ERROR_LINE	main.c	39;"	d	file:
+ERR_BOOTLOADER_DOWNLOAD_FAILED	main.c	42;"	d	file:
+ERR_COPY_IMAGE	main.c	48;"	d	file:
+ERR_NOT_FOUND_BOOTLOADER_PATH	main.c	44;"	d	file:
+ERR_NOT_FOUND_DEVCIE_VERSION	main.c	45;"	d	file:
+ERR_NOT_FOUND_FILE	main.c	49;"	d	file:
+ERR_NOT_FOUND_MTDBLOCK	main.c	40;"	d	file:
+ERR_NOT_FOUND_MTDUTILS	main.c	41;"	d	file:
+ERR_NOT_FOUND_TAG	main.c	43;"	d	file:
+ERR_NOT_FOUND_USBDISK	main.c	46;"	d	file:
+ERR_PRINT	main.c	50;"	d	file:
+ERR_USBDISK_MOUNT	main.c	47;"	d	file:
+FLASH_ERASEALL_BIN	main.c	30;"	d	file:
+INCDIR	Makefile	/^INCDIR=-I$(BASEDIR) -I$(BASEDIR)\/include -I$(SRCDIR1) -I$(SRCDIR2)$/;"	m
+LD	Makefile	/^LD=$(CROSS)ld$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS=$/;"	m
+MAX_CHECK_USB	main.c	21;"	d	file:
+MAX_UPDATE_COUNT	main.c	26;"	d	file:
+MOUNT_PATH	main.c	29;"	d	file:
+NOTICE_PRINT	main.c	53;"	d	file:
+NOTI_LATEST_BOOTLOADER	main.c	52;"	d	file:
+OBJS	Makefile	/^OBJS =$(SRCS:.c=.o)$/;"	m
+OK	main.c	18;"	d	file:
+PLATFORM	config.mk	/^PLATFORM=openwrt$/;"	m
+SRCDIR1	Makefile	/^SRCDIR1=$(BASEDIR)$/;"	m
+SRCS	Makefile	/^SRCS := $(notdir $(SRCS)) $/;"	m
+SRCS	Makefile	/^SRCS = $(foreach dir, . $(SRCDIR1) , $(wildcard $(dir)\/*.c))             $/;"	m
+STATUS_COMPLETE	main.c	75;"	d	file:
+STATUS_DEVICE_INIT	main.c	59;"	d	file:
+STATUS_ERASE_MTDBLOCK	main.c	65;"	d	file:
+STATUS_ERROR	main.c	76;"	d	file:
+STATUS_LINE	main.c	56;"	d	file:
+STATUS_MTDBLOCK_COPY	main.c	60;"	d	file:
+STATUS_PRINT	main.c	70;"	d	file:
+STATUS_READY	main.c	73;"	d	file:
+STATUS_READY_FILE	main.c	64;"	d	file:
+STATUS_READY_MTDUTILS	main.c	63;"	d	file:
+STATUS_START	main.c	57;"	d	file:
+STATUS_UPDATE	main.c	74;"	d	file:
+STATUS_UPDATE_COMPLETE	main.c	68;"	d	file:
+STATUS_USBDISK_INIT	main.c	61;"	d	file:
+STATUS_USBDISK_MOUNT	main.c	62;"	d	file:
+STATUS_WAIT_10SEC	main.c	58;"	d	file:
+STATUS_WAIT_5MIN	main.c	66;"	d	file:
+STATUS_WAIT_60SEC	main.c	69;"	d	file:
+STATUS_WRITE_IMAGE	main.c	67;"	d	file:
+STRIP	Makefile	/^STRIP=$(CROSS)strip$/;"	m
+SYS_MTD4_NAME_PATH	main.c	32;"	d	file:
+TARGET	Makefile	/^TARGET=boot$/;"	m
+TMP_IMAGE_PATH	main.c	33;"	d	file:
+TMP_SPLIT_IMAGE_PATH	main.c	34;"	d	file:
+UPDATE_DEVICE_RULE	main.c	37;"	d	file:
+UPDATE_FILE_RULE	main.c	35;"	d	file:
+UPDATE_OS_RULE	main.c	36;"	d	file:
+USB_PATH	main.c	28;"	d	file:
+VERSION	Makefile	/^VERSION=1.0$/;"	m
+VERSION_TAG_LENGTH	main.c	24;"	d	file:
+VPATH	Makefile	/^VPATH = $(SRCDIR1)$/;"	m
+access_mount_path	main.c	/^access_mount_path (void)$/;"	f	file:
+access_usbdisk	main.c	/^access_usbdisk (void)$/;"	f	file:
+check_update	main.c	/^check_update (struct stamp_tag *file_tag, struct stamp_tag *device_tag)$/;"	f	file:
+compare_sha1sum	main.c	/^compare_sha1sum (struct stamp_tag *dst, struct stamp_tag *src)$/;"	f	file:
+console_print	main.c	/^console_print(const char *fmt, ...)$/;"	f
+copy_mtdblock_image	main.c	/^copy_mtdblock_image(struct stamp_tag *file_tag)$/;"	f	file:
+erase_mtdblcok	main.c	/^erase_mtdblcok (char *new_path)$/;"	f	file:
+filesize	main.c	/^  int filesize;$/;"	m	struct:stamp_tag	file:
+find_file	main.c	/^find_file (char *dst, struct stamp_tag *file_tag)$/;"	f	file:
+get_filesize_from_image	main.c	/^get_filesize_from_image (struct stamp_tag *file_tag)$/;"	f	file:
+get_sha1sum_from_image	main.c	/^get_sha1sum_from_image (struct stamp_tag *file_tag)$/;"	f	file:
+init_device_info	main.c	/^init_device_info(struct stamp_tag *device_tag)$/;"	f	file:
+init_file_path	main.c	/^init_file_path (char *src, struct stamp_tag *file)$/;"	f	file:
+init_mtdutils	main.c	/^init_mtdutils (void)$/;"	f	file:
+init_usbdisk_for_update	main.c	/^init_usbdisk_for_update (void)$/;"	f	file:
+main	main.c	/^int main(int argc, char *argv[])$/;"	f
+mount_usbdisk	main.c	/^mount_usbdisk (void)$/;"	f	file:
+path	main.c	/^  char path[256];$/;"	m	struct:stamp_tag	file:
+sha1sum	main.c	/^  char sha1sum[128];$/;"	m	struct:stamp_tag	file:
+stamp	main.c	/^  int stamp;$/;"	m	struct:stamp_tag	file:
+stamp_tag	main.c	/^struct stamp_tag$/;"	s	file:
+status_flag	main.c	/^int status_flag = STATUS_READY;$/;"	v
+status_thread	main.c	/^void *status_thread (void *arg)$/;"	f
+tag	main.c	/^  char tag[12];$/;"	m	struct:stamp_tag	file:
+update_from_file	main.c	/^update_from_file(char *src)$/;"	f	file:
+update_from_usbdisk	main.c	/^update_from_usbdisk (void)$/;"	f
+write_image_to_mtdblock	main.c	/^write_image_to_mtdblock (char *new_path)$/;"	f	file:

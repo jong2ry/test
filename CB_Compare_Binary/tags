@@ -1,0 +1,64 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AR	Makefile	/^AR=$(CROSS)ar$/;"	m
+BUF_SIZE	cb.c	9;"	d	file:
+CC	Makefile	/^CC=$(CROSS)gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS=-Wall -g$/;"	m
+CPP	Makefile	/^CPP=$(CROSS)g++$/;"	m
+CROSS	Makefile	/^CROSS=\/usr\/local\/marvell\/mv6281\/sdk\/3.2\/bin\/arm-mv5sft-linux-gnueabi-$/;"	m
+DEV_MTD1_PATH	cb.c	20;"	d	file:
+END_TAG	cb.c	18;"	d	file:
+ERROR	cb.c	14;"	d	file:
+ERROR_LINE	cb.c	36;"	d	file:
+ERR_BOOTLOADER_DOWNLOAD_FAILED	cb.c	39;"	d	file:
+ERR_NOT_FOUND_BOOTLOADER_PATH	cb.c	41;"	d	file:
+ERR_NOT_FOUND_MTDBLOCK	cb.c	37;"	d	file:
+ERR_NOT_FOUND_MTDUTILS	cb.c	38;"	d	file:
+ERR_NOT_FOUND_TAG	cb.c	40;"	d	file:
+ERR_PRINT	cb.c	42;"	d	file:
+FLASH_ERASEALL_BIN	cb.c	24;"	d	file:
+GIT_TAG	cb.c	16;"	d	file:
+LD	Makefile	/^LD=$(CROSS)ld$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS=$/;"	m
+LINE	cb.c	44;"	d	file:
+NOTICE_PRINT	cb.c	48;"	d	file:
+NOTI_LATEST_BOOTLOADER	cb.c	46;"	d	file:
+NOTI_NOT_FOUND_TAG	cb.c	45;"	d	file:
+OBJS	Makefile	/^OBJS=cb\\$/;"	m
+OK	cb.c	13;"	d	file:
+STAMP_LENGTH	cb.c	11;"	d	file:
+STAMP_TAG	cb.c	17;"	d	file:
+STATE_ASK_BOOTLOADER_UPDATE	cb.c	30;"	d	file:
+STATE_BOOTLOADER_UPDATE	cb.c	31;"	d	file:
+STATE_CHK_MACHIN_BOOTLOADER	cb.c	27;"	d	file:
+STATE_COMPARE_BOOTLOADER	cb.c	29;"	d	file:
+STATE_DOWDLOAD_SVR_BOOTLOADER	cb.c	28;"	d	file:
+STATE_ERROR_EXIT	cb.c	34;"	d	file:
+STATE_INIT	cb.c	26;"	d	file:
+STATE_NORMAL_EXIT	cb.c	32;"	d	file:
+STATE_PRINT	cb.c	50;"	d	file:
+STATE_UPDATE_COMPLETE	cb.c	33;"	d	file:
+STRING_LENGTH	cb.c	10;"	d	file:
+STRIP	Makefile	/^STRIP=$(CROSS)strip$/;"	m
+SYS_MTD1_NAME_PATH	cb.c	21;"	d	file:
+TMP_UBOOT_PATH	cb.c	22;"	d	file:
+UPDATE_SERVER_PATH	cb.c	23;"	d	file:
+board_type	cb.c	/^  int board_type;$/;"	m	struct:model_list	file:
+boot_list	cb.c	/^struct model_list boot_list[] =$/;"	v	typeref:struct:model_list
+bootloader_name	cb.c	/^  char bootloader_name[32];$/;"	m	struct:model_list	file:
+convert_bootloader_path	cb.c	/^convert_bootloader_path(int board_type, char *bootloader_path)$/;"	f	file:
+get_board_type	cb.c	/^get_board_type (void)$/;"	f	file:
+get_bootloader_tag	cb.c	/^get_bootloader_tag (char *pfile, struct stamp_tag *psrc)$/;"	f	file:
+is_download_bootloader	cb.c	/^is_download_bootloader(int board_type, char *bootloader_path)$/;"	f	file:
+is_ready_mtdblock	cb.c	/^is_ready_mtdblock (void)$/;"	f	file:
+is_ready_mtdutils	cb.c	/^is_ready_mtdutils (void)$/;"	f	file:
+main	cb.c	/^int main(int argc, char *argv[])$/;"	f
+model_list	cb.c	/^struct model_list$/;"	s	file:
+stamp	cb.c	/^  char stamp[12];$/;"	m	struct:stamp_tag	file:
+stamp_tag	cb.c	/^struct stamp_tag$/;"	s	file:
+update_bootloader	cb.c	/^update_bootloader (char *bootloader_path)$/;"	f	file:
+ver	cb.c	/^  char ver[12];$/;"	m	struct:stamp_tag	file:

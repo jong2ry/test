@@ -1,0 +1,457 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AMT_CNUM_INDEX	lib/if_lte.h	142;"	d
+AMT_GMM_INDEX	lib/if_lte.h	140;"	d
+AMT_IMEI_INDEX	lib/if_lte.h	141;"	d
+AMT_NETTYPE_INDEX	lib/if_lte.h	138;"	d
+AMT_RSSI_INDEX	lib/if_lte.h	139;"	d
+AMT_STATE_INDEX	lib/if_lte.h	137;"	d
+APN_TYPE_DEFAULT	lib/if_lte.h	/^    APN_TYPE_DEFAULT,$/;"	e	enum:__anon5
+APN_TYPE_KT	lib/if_lte.h	/^    APN_TYPE_KT,$/;"	e	enum:__anon5
+APN_TYPE_LGU	lib/if_lte.h	/^    APN_TYPE_LGU,$/;"	e	enum:__anon5
+APN_TYPE_NONE	lib/if_lte.h	/^    APN_TYPE_NONE = 0,$/;"	e	enum:__anon5
+APN_TYPE_SKT	lib/if_lte.h	/^    APN_TYPE_SKT,$/;"	e	enum:__anon5
+APN_TYPE_USER	lib/if_lte.h	/^    APN_TYPE_USER$/;"	e	enum:__anon5
+AR	Makefile	/^AR=$(CROSS)ar$/;"	m
+ARRAY_SIZE	lib/if_lte.c	53;"	d	file:
+ARRAY_SIZE	lib/lte/amp5210.c	25;"	d	file:
+ARRAY_SIZE	lib/lte/anydata.c	25;"	d	file:
+ARRAY_SIZE	lib/lte/kmkl200.c	25;"	d	file:
+ARRAY_SIZE	lib/lte/l300s.c	29;"	d	file:
+ARRAY_SIZE	lib/lte/lgm2m_pegasus.c	29;"	d	file:
+ARRAY_SIZE	lib/lte/lgm2m_type1.c	25;"	d	file:
+ARRAY_SIZE	lib/lte/lgm2m_type2.c	29;"	d	file:
+ARRAY_SIZE	lib/lte/mec.c	24;"	d	file:
+ARRAY_SIZE	lib/lte/ntlm200q.c	25;"	d	file:
+ARRAY_SIZE	lib/lte/ntmore.c	24;"	d	file:
+ARRAY_SIZE	lib/lte/tm400.c	29;"	d	file:
+AT_NO_WAIT	lib/if_lte.h	92;"	d
+AT_WAIT	lib/if_lte.h	93;"	d
+AUX_CONSOLE_INF	main.c	24;"	d	file:
+BASEDIR	Makefile	/^BASEDIR=$(shell pwd)$/;"	m
+BIPState	lib/if_lte.h	/^   unsigned char BIPState;      \/\/ aaaaa BIP$/;"	m	struct:LTE_CM_STATE_SHM
+BUF_SIZE	main.c	18;"	d	file:
+CC	Makefile	/^CC=$(CROSS)gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS=-Wall -g -I$(BASEDIR)\/include -I$(SRCDIR1) -I$(SRCDIR2)$/;"	m
+CHK_CDC_ACM_DRV	lib/if_lte.h	346;"	d
+CHK_CDC_ETHER_DRV	lib/if_lte.h	345;"	d
+CHK_GDMTTY_DRV	lib/if_lte.h	349;"	d
+CHK_GDMULTE_DRV	lib/if_lte.h	348;"	d
+CHK_M2M_SDK	lib/if_lte.h	350;"	d
+CHK_RNDIS_HOST_DRV	lib/if_lte.h	347;"	d
+CMD_LTE_LED_PDN	lib/if_lte.h	330;"	d
+CMD_LTE_LED_PUP	lib/if_lte.h	331;"	d
+CMD_SIG_LED_PDN	lib/if_lte.h	328;"	d
+CMD_SIG_LED_PUP	lib/if_lte.h	329;"	d
+CMD_SYSLTE_PDN	lib/if_lte.h	323;"	d
+CMD_SYSLTE_PUP	lib/if_lte.h	322;"	d
+CMD_SYSLTE_RESET	lib/if_lte.h	324;"	d
+CMD_SYSM2M_DI_READ	lib/if_lte.h	325;"	d
+CMD_SYSM2M_FAC_READ	lib/if_lte.h	326;"	d
+CONNECT	lib/if_lte.h	/^    CONNECT = 0$/;"	e	enum:__anon3
+CPP	Makefile	/^CPP=$(CROSS)g++$/;"	m
+CQI_CODE_STATISTICS_INFO	lib/if_lte.h	/^}__attribute__((packed)) CQI_CODE_STATISTICS_INFO, *PCQI_CODE_STATISTICS_INFO;$/;"	t	typeref:struct:_CQI_CODE_STATISTICS_INFO
+CQI_REPORT_RSP_INFO	lib/if_lte.h	/^}__attribute__((packed)) CQI_REPORT_RSP_INFO, *PCQI_REPORT_RSP_INFO;$/;"	t	typeref:struct:_CQI_REPORT_RSP_INFO
+CQI_TYPE_STATISTICS_INFO	lib/if_lte.h	/^}__attribute__((packed)) CQI_TYPE_STATISTICS_INFO, *PCQI_TYPE_STATISTICS_INFO;$/;"	t	typeref:struct:_CQI_TYPE_STATISTICS_INFO
+CROSS	Makefile	/^CROSS=\/home_ssd\/jong2ry\/VOS\/m2mg30_openwrt\/buildroot\/staging_dir\/toolchain-atmel_sam9x\/bin\/arm-openwrt-linux-uclibcgnueabi-$/;"	m
+CROSS	Makefile	/^CROSS=\/usr\/local\/Cavium_Networks\/OCTEON-SDK-2.3\/tools\/bin\/mips64-octeon-linux-gnu-$/;"	m
+CROSS	Makefile	/^CROSS=\/usr\/local\/marvell\/mv6281\/sdk\/3.2\/bin\/arm-mv5sft-linux-gnueabi-$/;"	m
+CROSS	Makefile	/^CROSS=\/usr\/local\/sdk\/atmel\/sam9g25\/sdk\/3.2\/bin\/arm-mv5sft-linux-gnueabi-$/;"	m
+CmState	lib/if_lte.h	/^   unsigned char CmState;$/;"	m	struct:LTE_CM_STATE_SHM
+CmStateStr	lib/if_lte.h	/^   char  CmStateStr[255+1];$/;"	m	struct:LTE_CM_STATE_SHM
+DBG	lib/lte/amp5210.c	32;"	d	file:
+DBG	lib/lte/anydata.c	32;"	d	file:
+DBG	lib/lte/kmkl200.c	32;"	d	file:
+DBG	lib/lte/l300s.c	33;"	d	file:
+DBG	lib/lte/lgm2m_pegasus.c	33;"	d	file:
+DBG	lib/lte/lgm2m_type1.c	32;"	d	file:
+DBG	lib/lte/lgm2m_type2.c	33;"	d	file:
+DBG	lib/lte/ntlm200q.c	56;"	d	file:
+DBG	lib/lte/tm400.c	33;"	d	file:
+DISCONNECT	lib/if_lte.h	/^    DISCONNECT = -1,$/;"	e	enum:__anon3
+ERROR	main.c	23;"	d	file:
+EXT_STATE	lib/if_lte.h	/^}EXT_STATE;$/;"	t	typeref:struct:_ext_state
+EmmCause	lib/if_lte.h	/^   int  EmmCause;$/;"	m	struct:LTE_CM_STATE_SHM
+IMSI	lib/if_lte.h	/^   unsigned char IMSI[20+1];$/;"	m	struct:LTE_CM_STATE_SHM
+KNI_CGMR_INDEX	lib/if_lte.h	149;"	d
+KNI_CNUM_INDEX	lib/if_lte.h	150;"	d
+KNI_IMEI_INDEX	lib/if_lte.h	151;"	d
+KNI_SYSINFO_BAND	lib/if_lte.h	/^  KNI_SYSINFO_BAND,$/;"	e	enum:__anon8
+KNI_SYSINFO_BIT_ERR_RATE	lib/if_lte.h	/^  KNI_SYSINFO_BIT_ERR_RATE,$/;"	e	enum:__anon8
+KNI_SYSINFO_CELL_ID	lib/if_lte.h	/^  KNI_SYSINFO_CELL_ID,$/;"	e	enum:__anon8
+KNI_SYSINFO_CHANNEL	lib/if_lte.h	/^  KNI_SYSINFO_CHANNEL,$/;"	e	enum:__anon8
+KNI_SYSINFO_DUMMY	lib/if_lte.h	/^  KNI_SYSINFO_DUMMY= 0,$/;"	e	enum:__anon8
+KNI_SYSINFO_ECIO	lib/if_lte.h	/^  KNI_SYSINFO_ECIO,$/;"	e	enum:__anon8
+KNI_SYSINFO_EMM_CAUSE	lib/if_lte.h	/^  KNI_SYSINFO_EMM_CAUSE,$/;"	e	enum:__anon8
+KNI_SYSINFO_EMM_CONNECTION	lib/if_lte.h	/^  KNI_SYSINFO_EMM_CONNECTION,$/;"	e	enum:__anon8
+KNI_SYSINFO_EMM_STATE	lib/if_lte.h	/^  KNI_SYSINFO_EMM_STATE,$/;"	e	enum:__anon8
+KNI_SYSINFO_EMM_SUBSTATE	lib/if_lte.h	/^  KNI_SYSINFO_EMM_SUBSTATE,$/;"	e	enum:__anon8
+KNI_SYSINFO_LAC	lib/if_lte.h	/^  KNI_SYSINFO_LAC,$/;"	e	enum:__anon8
+KNI_SYSINFO_MCC	lib/if_lte.h	/^  KNI_SYSINFO_MCC,$/;"	e	enum:__anon8
+KNI_SYSINFO_MNC	lib/if_lte.h	/^  KNI_SYSINFO_MNC,$/;"	e	enum:__anon8
+KNI_SYSINFO_RAC	lib/if_lte.h	/^  KNI_SYSINFO_RAC,$/;"	e	enum:__anon8
+KNI_SYSINFO_ROAM_STATUS	lib/if_lte.h	/^  KNI_SYSINFO_ROAM_STATUS,$/;"	e	enum:__anon8
+KNI_SYSINFO_RRC	lib/if_lte.h	/^  KNI_SYSINFO_RRC,$/;"	e	enum:__anon8
+KNI_SYSINFO_RSCP	lib/if_lte.h	/^  KNI_SYSINFO_RSCP,$/;"	e	enum:__anon8
+KNI_SYSINFO_RSRP	lib/if_lte.h	/^  KNI_SYSINFO_RSRP,$/;"	e	enum:__anon8
+KNI_SYSINFO_RSRQ	lib/if_lte.h	/^  KNI_SYSINFO_RSRQ,$/;"	e	enum:__anon8
+KNI_SYSINFO_RSSI	lib/if_lte.h	/^  KNI_SYSINFO_RSSI,$/;"	e	enum:__anon8
+KNI_SYSINFO_SIM	lib/if_lte.h	/^  KNI_SYSINFO_SIM,$/;"	e	enum:__anon8
+KNI_SYSINFO_SMS_DOMAIN	lib/if_lte.h	/^  KNI_SYSINFO_SMS_DOMAIN,$/;"	e	enum:__anon8
+KNI_SYSINFO_SRV_STATUS	lib/if_lte.h	/^  KNI_SYSINFO_SRV_STATUS,$/;"	e	enum:__anon8
+KNI_SYSINFO_SYS_MODE	lib/if_lte.h	/^  KNI_SYSINFO_SYS_MODE,$/;"	e	enum:__anon8
+KNI_SYSINFO_TAC	lib/if_lte.h	/^  KNI_SYSINFO_TAC,$/;"	e	enum:__anon8
+KNI_SYSINFO_TIN	lib/if_lte.h	/^  KNI_SYSINFO_TIN,$/;"	e	enum:__anon8
+KNI_SYSINFO_VOICE_DOMAIN	lib/if_lte.h	/^  KNI_SYSINFO_VOICE_DOMAIN,$/;"	e	enum:__anon8
+LD	Makefile	/^LD=$(CROSS)ld$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS=$/;"	m
+LGM2M_TYPE2_HEADER_SIZE	lib/if_lte.h	343;"	d
+LGM2M_TYPE2_IMEI_INDEX	lib/if_lte.h	147;"	d
+LGM2M_TYPE2_LGTMDN_INDEX	lib/if_lte.h	146;"	d
+LGM2M_TYPE2_LGTRSSI_INDEX	lib/if_lte.h	145;"	d
+LGM2M_TYPE2_SOCK_IP	lib/if_lte.h	341;"	d
+LGM2M_TYPE2_SOCK_PORT	lib/if_lte.h	342;"	d
+LGM2M_TYPE2_STATE_INDEX	lib/if_lte.h	144;"	d
+LTEIF_LGU_INTERNET	lib/if_lte.h	89;"	d
+LTEIF_LGU_INTERNET_NETWORK	lib/if_lte.h	/^  LTEIF_LGU_INTERNET_NETWORK,$/;"	e	enum:__anon6
+LTEIF_LGU_M2M	lib/if_lte.h	90;"	d
+LTEIF_LGU_M2M_NETWORK	lib/if_lte.h	/^  LTEIF_LGU_M2M_NETWORK$/;"	e	enum:__anon6
+LTEIF_LGU_MOBILE	lib/if_lte.h	88;"	d
+LTEIF_LGU_MOBILE_NETWORK	lib/if_lte.h	/^  LTEIF_LGU_MOBILE_NETWORK = 0,$/;"	e	enum:__anon6
+LTER_CONNECTION_TIMEOUT	lib/if_lte.h	444;"	d
+LTER_DI_CONNECT	lib/if_lte.h	439;"	d
+LTER_DI_DISCONNECT	lib/if_lte.h	440;"	d
+LTER_FAC_NONE	lib/if_lte.h	441;"	d
+LTER_FAC_RESET	lib/if_lte.h	442;"	d
+LTE_BUF_LENGTH	lib/if_lte.h	6;"	d
+LTE_CM_RF_DEBUG_KEY	lib/if_lte.h	224;"	d
+LTE_CM_STATE_KEY	lib/if_lte.h	223;"	d
+LTE_CM_STATE_SHM	lib/if_lte.h	/^typedef struct LTE_CM_STATE_SHM$/;"	s
+LTE_CM_STATE_SHM_t	lib/if_lte.h	/^}__attribute__((packed)) LTE_CM_STATE_SHM_t;$/;"	t	typeref:struct:LTE_CM_STATE_SHM
+LTE_ERROR	lib/if_lte.h	/^    LTE_ERROR = 0,$/;"	e	enum:__anon2
+LTE_IF_TYPE_LTE	lib/if_lte.h	11;"	d
+LTE_IF_TYPE_PPP	lib/if_lte.h	10;"	d
+LTE_M2M_CHK_INTERVAL	lib/if_lte.h	357;"	d
+LTE_M2M_EXT_SIGNAL_CONNECT	lib/if_lte.h	360;"	d
+LTE_M2M_EXT_SIGNAL_DISCONNECT	lib/if_lte.h	361;"	d
+LTE_M2M_EXT_SIGNAL_NONE	lib/if_lte.h	359;"	d
+LTE_M2M_EXT_SIGNAL_READ_CMD	lib/if_lte.h	358;"	d
+LTE_M2M_EXT_STATE_CONNECT	lib/if_lte.h	/^    LTE_M2M_EXT_STATE_CONNECT,$/;"	e	enum:__anon7
+LTE_M2M_EXT_STATE_DISCONNECT	lib/if_lte.h	/^    LTE_M2M_EXT_STATE_DISCONNECT$/;"	e	enum:__anon7
+LTE_M2M_EXT_STATE_ERROR	lib/if_lte.h	/^    LTE_M2M_EXT_STATE_ERROR = -1,$/;"	e	enum:__anon7
+LTE_M2M_EXT_STATE_NONE	lib/if_lte.h	/^    LTE_M2M_EXT_STATE_NONE = 0,$/;"	e	enum:__anon7
+LTE_OK	lib/if_lte.h	/^    LTE_OK = !(LTE_ERROR)$/;"	e	enum:__anon2
+LTE_RF_DEBUG_SHM	lib/if_lte.h	/^typedef struct LTE_RF_DEBUG_SHM$/;"	s
+LTE_RF_DEBUG_SHM_t	lib/if_lte.h	/^}__attribute__((packed)) LTE_RF_DEBUG_SHM_t;$/;"	t	typeref:struct:LTE_RF_DEBUG_SHM
+LTE_STATE	lib/if_lte.h	/^} LTE_STATE;$/;"	t	typeref:struct:_lte_state
+M2M_GET_M2MPCM_CMD	lib/if_lte.h	339;"	d
+M2M_TYPE1_PRODUCT	lib/if_lte.h	337;"	d
+M2M_TYPE2_PRODUCT	lib/if_lte.h	338;"	d
+M2M_VENDOR	lib/if_lte.h	336;"	d
+MAX_BUF_LENGTH	lib/if_lte.h	7;"	d
+MAX_TOKEN_BUF_LENGTH	lib/if_lte.h	8;"	d
+OBJS	Makefile	/^OBJS =$(SRCS:.c=.o)$/;"	m
+OK	main.c	22;"	d	file:
+OTA_TYPE_KT	lib/if_lte.h	/^    OTA_TYPE_KT = 0,$/;"	e	enum:__anon4
+OTA_TYPE_SKT	lib/if_lte.h	/^    OTA_TYPE_SKT = 1$/;"	e	enum:__anon4
+PCQI_CODE_STATISTICS_INFO	lib/if_lte.h	/^}__attribute__((packed)) CQI_CODE_STATISTICS_INFO, *PCQI_CODE_STATISTICS_INFO;$/;"	t	typeref:struct:_CQI_CODE_STATISTICS_INFO
+PCQI_REPORT_RSP_INFO	lib/if_lte.h	/^}__attribute__((packed)) CQI_REPORT_RSP_INFO, *PCQI_REPORT_RSP_INFO;$/;"	t	typeref:struct:_CQI_REPORT_RSP_INFO
+PCQI_TYPE_STATISTICS_INFO	lib/if_lte.h	/^}__attribute__((packed)) CQI_TYPE_STATISTICS_INFO, *PCQI_TYPE_STATISTICS_INFO;$/;"	t	typeref:struct:_CQI_TYPE_STATISTICS_INFO
+PRINT_MSG	main.c	86;"	d	file:
+PROBE_MAX_COUNT	lib/if_lte.h	95;"	d
+PRODUCT_AMT	lib/if_lte.h	/^  PRODUCT_AMT,              \/\/ AMTelecom$/;"	e	enum:__anon1
+PRODUCT_ANYDATA	lib/if_lte.h	/^  PRODUCT_ANYDATA,          \/\/ Anydata$/;"	e	enum:__anon1
+PRODUCT_KNI	lib/if_lte.h	/^  PRODUCT_KNI,              \/\/ CS$/;"	e	enum:__anon1
+PRODUCT_L300S	lib/if_lte.h	/^  PRODUCT_L300S,            \/\/ Pantech PM-L300S$/;"	e	enum:__anon1
+PRODUCT_LGM2M_TYPE1	lib/if_lte.h	/^  PRODUCT_LGM2M_TYPE1,      \/\/ LG M2M TYPE 1$/;"	e	enum:__anon1
+PRODUCT_LGM2M_TYPE2	lib/if_lte.h	/^  PRODUCT_LGM2M_TYPE2,      \/\/ LG M2M TYPE 2$/;"	e	enum:__anon1
+PRODUCT_MEC	lib/if_lte.h	/^  PRODUCT_MEC,              \/\/ MobileECO$/;"	e	enum:__anon1
+PRODUCT_NONE	lib/if_lte.h	/^  PRODUCT_NONE= 0,$/;"	e	enum:__anon1
+PRODUCT_NT	lib/if_lte.h	/^  PRODUCT_NT,               \/\/ NTmore$/;"	e	enum:__anon1
+PRODUCT_NTLM200Q	lib/if_lte.h	/^  PRODUCT_NTLM200Q,         \/\/ NTmore 200Q$/;"	e	enum:__anon1
+PRODUCT_PEGASUS	lib/if_lte.h	/^  PRODUCT_PEGASUS,          \/\/ LG M2M PEGASUS$/;"	e	enum:__anon1
+PRODUCT_TM400	lib/if_lte.h	/^  PRODUCT_TM400,            \/\/ Teladin TM400$/;"	e	enum:__anon1
+PinRemainCnt	lib/if_lte.h	/^   int PinRemainCnt;$/;"	m	struct:LTE_CM_STATE_SHM
+PukRemainCnt	lib/if_lte.h	/^   int PukRemainCnt;$/;"	m	struct:LTE_CM_STATE_SHM
+Rrc	lib/if_lte.h	/^   unsigned char Rrc;  \/* Connected or IDLE *\/$/;"	m	struct:LTE_CM_STATE_SHM
+Rsrp	lib/if_lte.h	/^   int Rsrp;$/;"	m	struct:LTE_CM_STATE_SHM
+Rssi	lib/if_lte.h	/^   int Rssi;$/;"	m	struct:LTE_CM_STATE_SHM
+SENSOR_REQUEST_MESSAGE	main.c	25;"	d	file:
+SRCDIR1	Makefile	/^SRCDIR1=$(BASEDIR)\/lib$/;"	m
+SRCDIR2	Makefile	/^SRCDIR2=$(BASEDIR)\/lib\/lte$/;"	m
+SRCS	Makefile	/^SRCS := $(notdir $(SRCS)) $/;"	m
+SRCS	Makefile	/^SRCS = $(foreach dir, . $(SRCDIR1) $(SRCDIR2), $(wildcard $(dir)\/*.c))             $/;"	m
+STAMP_LENGTH	main.c	20;"	d	file:
+STRING_LENGTH	main.c	19;"	d	file:
+STRIP	Makefile	/^STRIP=$(CROSS)strip$/;"	m
+TARGET	Makefile	/^TARGET=lte_state$/;"	m
+TTY_AMT	lib/if_lte.h	76;"	d
+TTY_ANY	lib/if_lte.h	80;"	d
+TTY_KNI0	lib/if_lte.h	77;"	d
+TTY_KNI1	lib/if_lte.h	78;"	d
+TTY_L300S	lib/if_lte.h	84;"	d
+TTY_LGM2M_TYPE1	lib/if_lte.h	82;"	d
+TTY_MEC	lib/if_lte.h	79;"	d
+TTY_NT	lib/if_lte.h	81;"	d
+TTY_NTLM200Q	lib/if_lte.h	83;"	d
+TTY_PEGASUS	lib/if_lte.h	85;"	d
+TTY_TM400	lib/if_lte.h	86;"	d
+TimeStamp	lib/if_lte.h	/^    char TimeStamp[6+1]; \/\/ HHMMSS$/;"	m	struct:LTE_RF_DEBUG_SHM
+TimeStamp	lib/if_lte.h	/^   char TimeStamp[6+1]; \/\/ HHMMSS$/;"	m	struct:LTE_CM_STATE_SHM
+USER_DB_CREATE_TABLE_STR	lib/if_lte.c	42;"	d	file:
+USER_DB_PATH	lib/if_lte.c	41;"	d	file:
+UiccState	lib/if_lte.h	/^   unsigned char UiccState;$/;"	m	struct:LTE_CM_STATE_SHM
+UiccStateStr	lib/if_lte.h	/^   char UiccStateStr[255+1];$/;"	m	struct:LTE_CM_STATE_SHM
+VERSION	Makefile	/^VERSION=1.0$/;"	m
+VF403_RESET_PPP_GPIO	lib/if_lte.h	450;"	d
+VPATH	Makefile	/^VPATH = $(SRCDIR1):$(SRCDIR2)$/;"	m
+ZEBOS_LTE_MODULE	lib/if_lte.h	/^typedef struct ZEBOS_LTE_MODULE$/;"	s
+ZEBOS_LTE_MODULE_t	lib/if_lte.h	/^}__attribute__((packed)) ZEBOS_LTE_MODULE_t;$/;"	t	typeref:struct:ZEBOS_LTE_MODULE
+ZEBOS_NSM_LTE_KEY	lib/if_lte.h	39;"	d
+_CM_STATE_AIRPLANE	lib/if_lte.h	194;"	d
+_CM_STATE_BIP_OPEN	lib/if_lte.h	197;"	d
+_CM_STATE_CONNECTED	lib/if_lte.h	189;"	d
+_CM_STATE_CONNECTING	lib/if_lte.h	186;"	d
+_CM_STATE_CONNECT_CANCEL	lib/if_lte.h	187;"	d
+_CM_STATE_CONNECT_FAIL	lib/if_lte.h	188;"	d
+_CM_STATE_CONNECT_READY	lib/if_lte.h	185;"	d
+_CM_STATE_DISCONNECTED	lib/if_lte.h	191;"	d
+_CM_STATE_DISCONNECTING	lib/if_lte.h	190;"	d
+_CM_STATE_ERROR	lib/if_lte.h	196;"	d
+_CM_STATE_INVALID_UICC	lib/if_lte.h	180;"	d
+_CM_STATE_IP_ALLOC	lib/if_lte.h	195;"	d
+_CM_STATE_LOADING	lib/if_lte.h	173;"	d
+_CM_STATE_MODEM_INIT	lib/if_lte.h	176;"	d
+_CM_STATE_MODEM_INIT_FAIL	lib/if_lte.h	177;"	d
+_CM_STATE_MODEM_NOTFOUND	lib/if_lte.h	175;"	d
+_CM_STATE_MODEM_SEARCH	lib/if_lte.h	174;"	d
+_CM_STATE_NETWORK_NOTFOUND	lib/if_lte.h	184;"	d
+_CM_STATE_NETWORK_SCAN	lib/if_lte.h	183;"	d
+_CM_STATE_OUT_OF_SERVICE	lib/if_lte.h	192;"	d
+_CM_STATE_PIN_CHECK	lib/if_lte.h	181;"	d
+_CM_STATE_PIN_CHECK_FAIL	lib/if_lte.h	182;"	d
+_CM_STATE_SLEEP	lib/if_lte.h	193;"	d
+_CM_STATE_UICC_CHECK	lib/if_lte.h	178;"	d
+_CM_STATE_UICC_CHECK_FAIL	lib/if_lte.h	179;"	d
+_CM_STATE_UNKNOWN	lib/if_lte.h	198;"	d
+_CQI_CODE_STATISTICS_INFO	lib/if_lte.h	/^typedef struct _CQI_CODE_STATISTICS_INFO$/;"	s
+_CQI_REPORT_RSP_INFO	lib/if_lte.h	/^typedef struct _CQI_REPORT_RSP_INFO$/;"	s
+_CQI_TYPE_STATISTICS_INFO	lib/if_lte.h	/^typedef struct _CQI_TYPE_STATISTICS_INFO$/;"	s
+_IF_LTE_H	lib/if_lte.h	2;"	d
+_UICC_BIP_DETACH_RSP	lib/if_lte.h	217;"	d
+_UICC_BIP_OPENING_FAIL	lib/if_lte.h	219;"	d
+_UICC_BIP_OPENING_PROGRESS	lib/if_lte.h	215;"	d
+_UICC_BIP_OPENING_REQUIRE	lib/if_lte.h	214;"	d
+_UICC_BIP_OPENING_SUCCESS	lib/if_lte.h	216;"	d
+_UICC_BIP_UICC_DEACTIVE	lib/if_lte.h	218;"	d
+_UICC_CHK_FAIL	lib/if_lte.h	204;"	d
+_UICC_CHK_NONE	lib/if_lte.h	201;"	d
+_UICC_CHK_SUCCESS	lib/if_lte.h	202;"	d
+_UICC_CHK_SUCCESS_NO_PIN	lib/if_lte.h	205;"	d
+_UICC_CHK_SUCCESS_PIN_CHK_FAIL	lib/if_lte.h	212;"	d
+_UICC_CHK_SUCCESS_PIN_DISABLED	lib/if_lte.h	209;"	d
+_UICC_CHK_SUCCESS_PIN_ENABLED_VERIFIED	lib/if_lte.h	208;"	d
+_UICC_CHK_SUCCESS_PIN_NOT_INITIALIZED	lib/if_lte.h	206;"	d
+_UICC_CHK_SUCCESS_PIN_PERMANENTLY_BLOCKED	lib/if_lte.h	211;"	d
+_UICC_CHK_SUCCESS_PIN_PIN_BLOCKED	lib/if_lte.h	210;"	d
+_UICC_CHK_SUCCESS_PIN_REQUIRE	lib/if_lte.h	207;"	d
+_UICC_CHK_UICC_REMOVE	lib/if_lte.h	213;"	d
+_UICC_NOT_LGUPLUS	lib/if_lte.h	203;"	d
+_ext_state	lib/if_lte.h	/^typedef struct _ext_state{$/;"	s
+_lte_copy_default_config	lib/if_lte.c	/^_lte_copy_default_config (void)$/;"	f	file:
+_lte_find_interface	lib/if_lte.c	/^_lte_find_interface (char *name)$/;"	f	file:
+_lte_find_ip_address	lib/if_lte.c	/^_lte_find_ip_address (char *name)$/;"	f	file:
+_lte_read_sysM2M	lib/if_lte.c	/^_lte_read_sysM2M (int cmd)$/;"	f	file:
+_lte_state	lib/if_lte.h	/^typedef struct _lte_state$/;"	s
+amt_state_list	lib/lte/amp5210.c	/^LTE_STATE amt_state_list[] = {$/;"	v
+anydata_state_list	lib/lte/anydata.c	/^LTE_STATE anydata_state_list[] = {$/;"	v
+apn_name	lib/if_lte.h	/^    char apn_name[MAX_BUF_LENGTH];      \/\/ (mobile \/ internet \/ m2m-router)$/;"	m	struct:ZEBOS_LTE_MODULE
+at_cmd	lib/if_lte.h	/^  char at_cmd[32];$/;"	m	struct:kt_iot_kni_info
+band	lib/if_lte.h	/^  unsigned int band;$/;"	m	struct:LTE_RF_DEBUG_SHM
+band_list	lib/lte/kmkl200.c	/^kni_sysinfo_t band_list[] = {$/;"	v
+bandwidth	lib/if_lte.h	/^  unsigned int bandwidth;$/;"	m	struct:LTE_RF_DEBUG_SHM
+calldrop_list	lib/lte/kmkl200.c	/^kni_sysinfo_t calldrop_list[] = {$/;"	v
+cgi	lib/if_lte.h	/^  unsigned int cgi;$/;"	m	struct:LTE_RF_DEBUG_SHM
+cli	include/pal.h	/^struct cli$/;"	s
+cli_out	main.c	/^void cli_out(struct cli *cli, const char *fmt, ...) $/;"	f
+close_lgm2m_sock	lib/lte/lgm2m_type2.c	/^close_lgm2m_sock (int sockfd)$/;"	f	file:
+console_print	main.c	/^void console_print(const char *fmt, ...)$/;"	f
+contents	lib/if_lte.h	/^  char contents[64];$/;"	m	struct:kni_sysinfo
+contents	lib/if_lte.h	/^  char contents[64];$/;"	m	struct:kt_iot_kni_info
+cqi_stastics	lib/if_lte.h	/^  CQI_REPORT_RSP_INFO cqi_stastics;$/;"	m	struct:LTE_RF_DEBUG_SHM
+cqi_type_aperiodic	lib/if_lte.h	/^        CQI_CODE_STATISTICS_INFO cqi_type_aperiodic[5];$/;"	m	struct:_CQI_TYPE_STATISTICS_INFO
+cqi_type_periodic	lib/if_lte.h	/^        CQI_CODE_STATISTICS_INFO cqi_type_periodic[4];$/;"	m	struct:_CQI_TYPE_STATISTICS_INFO
+cur_dl	lib/if_lte.h	/^  unsigned int cur_dl;  \/\/ Current received data rate (bytes\/sec)$/;"	m	struct:LTE_RF_DEBUG_SHM
+cur_ul	lib/if_lte.h	/^  unsigned int cur_ul;  \/\/ Current sent data rate (bytes\/sec)$/;"	m	struct:LTE_RF_DEBUG_SHM
+cw1_cqi	lib/if_lte.h	/^        CQI_TYPE_STATISTICS_INFO cw1_cqi;$/;"	m	struct:_CQI_REPORT_RSP_INFO
+cw1_mcs	lib/if_lte.h	/^  unsigned short cw1_mcs[32];$/;"	m	struct:LTE_RF_DEBUG_SHM
+cw2_cqi	lib/if_lte.h	/^        CQI_TYPE_STATISTICS_INFO cw2_cqi;$/;"	m	struct:_CQI_REPORT_RSP_INFO
+cw2_mcs	lib/if_lte.h	/^  unsigned short cw2_mcs[32];$/;"	m	struct:LTE_RF_DEBUG_SHM
+dl_freq	lib/if_lte.h	/^  unsigned int dl_freq;$/;"	m	struct:LTE_RF_DEBUG_SHM
+dummy	include/pal.h	/^  int dummy;$/;"	m	struct:cli
+each_cqi_mode	lib/if_lte.h	/^        unsigned short each_cqi_mode[16];$/;"	m	struct:_CQI_CODE_STATISTICS_INFO
+earfcn	lib/if_lte.h	/^  unsigned short earfcn;$/;"	m	struct:LTE_RF_DEBUG_SHM
+ecgi	lib/if_lte.h	/^  unsigned char ecgi[7];$/;"	m	struct:LTE_RF_DEBUG_SHM
+emm_connection	lib/lte/kmkl200.c	/^kni_sysinfo_t emm_connection[] = {$/;"	v
+emm_list	lib/lte/kmkl200.c	/^kni_sysinfo_t emm_list[] = {$/;"	v
+emm_sub_1	lib/lte/kmkl200.c	/^kni_sysinfo_t emm_sub_1[] = {$/;"	v
+emm_sub_2	lib/lte/kmkl200.c	/^kni_sysinfo_t emm_sub_2[] = {$/;"	v
+emm_sub_3	lib/lte/kmkl200.c	/^kni_sysinfo_t emm_sub_3[] = {$/;"	v
+enable_ntlm200q_rmnet	lib/lte/ntlm200q.c	/^enable_ntlm200q_rmnet (void)$/;"	f
+error_cw1	lib/if_lte.h	/^  unsigned short error_cw1;$/;"	m	struct:LTE_RF_DEBUG_SHM
+error_cw2	lib/if_lte.h	/^  unsigned short error_cw2;$/;"	m	struct:LTE_RF_DEBUG_SHM
+ext_state	lib/if_lte.h	/^EXT_STATE ext_state;$/;"	v
+g_module	main.c	/^ZEBOS_LTE_MODULE_t g_module;$/;"	v
+get_amp5210_status	lib/lte/amp5210.c	/^get_amp5210_status (ZEBOS_LTE_MODULE_t *mod)$/;"	f
+get_anydata_status	lib/lte/anydata.c	/^get_anydata_status(ZEBOS_LTE_MODULE_t *mod)$/;"	f
+get_kmkl200_detail_status	lib/lte/kmkl200.c	/^get_kmkl200_detail_status (struct cli *cli)$/;"	f
+get_kmkl200_status	lib/lte/kmkl200.c	/^get_kmkl200_status(ZEBOS_LTE_MODULE_t *mod)$/;"	f
+get_l300s_status	lib/lte/l300s.c	/^get_l300s_status(ZEBOS_LTE_MODULE_t *mod)$/;"	f
+get_lgm2m_pegasus_status	lib/lte/lgm2m_pegasus.c	/^get_lgm2m_pegasus_status(ZEBOS_LTE_MODULE_t *mod)$/;"	f
+get_lgm2m_type1_status	lib/lte/lgm2m_type1.c	/^get_lgm2m_type1_status(ZEBOS_LTE_MODULE_t *mod)$/;"	f
+get_lgm2m_type2_status	lib/lte/lgm2m_type2.c	/^get_lgm2m_type2_status(ZEBOS_LTE_MODULE_t *mod)$/;"	f
+get_mec_status	lib/lte/mec.c	/^get_mec_status(ZEBOS_LTE_MODULE_t *mod)$/;"	f
+get_ntlm200q_detail_status	lib/lte/ntlm200q.c	/^get_ntlm200q_detail_status(struct cli *cli)$/;"	f
+get_ntlm200q_status	lib/lte/ntlm200q.c	/^get_ntlm200q_status(ZEBOS_LTE_MODULE_t *mod)$/;"	f
+get_ntmore_status	lib/lte/ntmore.c	/^get_ntmore_status(ZEBOS_LTE_MODULE_t *mod)$/;"	f
+get_tm400_status	lib/lte/tm400.c	/^get_tm400_status(ZEBOS_LTE_MODULE_t *mod)$/;"	f
+if_type	lib/if_lte.h	/^    char if_type[MAX_BUF_LENGTH];       \/\/ 모듈의 인터페이스 타입$/;"	m	struct:ZEBOS_LTE_MODULE
+imei	lib/if_lte.h	/^    char imei[MAX_BUF_LENGTH];          \/\/ IMEI 정보$/;"	m	struct:ZEBOS_LTE_MODULE
+index	lib/if_lte.h	/^  int  index;$/;"	m	struct:kt_iot_kni_info
+index	lib/if_lte.h	/^  int index;$/;"	m	struct:kni_sysinfo
+info	lib/if_lte.h	/^    char info[MAX_BUF_LENGTH];          \/\/ 모듈정보$/;"	m	struct:ZEBOS_LTE_MODULE
+ip_addr	lib/if_lte.h	/^    char ip_addr[MAX_BUF_LENGTH];       \/\/ 모듈의 IP Address$/;"	m	struct:ZEBOS_LTE_MODULE
+is_lgm2m_type1_m2mpcm	lib/lte/lgm2m_type1.c	/^is_lgm2m_type1_m2mpcm(void)$/;"	f
+is_ready_lgm2m_type2	lib/lte/lgm2m_type2.c	/^is_ready_lgm2m_type2 (void)$/;"	f
+kni_list	lib/lte/kmkl200.c	/^kt_iot_kni_info_t kni_list[] =$/;"	v
+kni_state_list	lib/lte/kmkl200.c	/^LTE_STATE kni_state_list[] = {$/;"	v
+kni_sysinfo	lib/if_lte.h	/^typedef struct kni_sysinfo$/;"	s
+kni_sysinfo_t	lib/if_lte.h	/^} kni_sysinfo_t;$/;"	t	typeref:struct:kni_sysinfo
+kt_iot_kni_info	lib/if_lte.h	/^typedef struct kt_iot_kni_info$/;"	s
+kt_iot_kni_info_t	lib/if_lte.h	/^} kt_iot_kni_info_t;$/;"	t	typeref:struct:kt_iot_kni_info
+l300s_state_list	lib/lte/l300s.c	/^LTE_STATE l300s_state_list[] = {$/;"	v
+level	lib/if_lte.h	/^    int level;                          \/\/ 신호레벨(0% ~ 100%)$/;"	m	struct:ZEBOS_LTE_MODULE
+lgu_uicc	lib/if_lte.h	/^    char lgu_uicc[MAX_BUF_LENGTH];      \/\/ LGU USIM 상태$/;"	m	struct:ZEBOS_LTE_MODULE
+list	lib/if_lte.h	/^  kni_sysinfo_t *list;$/;"	m	struct:kt_iot_kni_info
+long_apn	lib/if_lte.h	/^  char long_apn[256];$/;"	m	struct:lte_apn_info
+lte_apn_info	lib/if_lte.h	/^typedef struct lte_apn_info$/;"	s
+lte_apn_info_t	lib/if_lte.h	/^} lte_apn_info_t;$/;"	t	typeref:struct:lte_apn_info
+lte_change_apn	lib/if_lte.c	/^lte_change_apn (int type, char *apn_url)$/;"	f
+lte_check_factoryreset	lib/if_lte.c	/^lte_check_factoryreset (void)$/;"	f
+lte_enable_rmnet	lib/if_lte.c	/^lte_enable_rmnet(void)$/;"	f
+lte_get_interface_info	lib/if_lte.c	/^lte_get_interface_info (ZEBOS_LTE_MODULE_t *module)$/;"	f
+lte_get_level	lib/if_lte.c	/^lte_get_level (void)$/;"	f
+lte_get_module_info	lib/if_lte.c	/^lte_get_module_info (ZEBOS_LTE_MODULE_t *module)$/;"	f
+lte_get_product	lib/if_lte.c	/^lte_get_product(void)$/;"	f
+lte_is_available	lib/if_lte.c	/^lte_is_available (void)$/;"	f
+lte_is_driver	lib/if_lte.c	/^lte_is_driver (char *pCmd)$/;"	f
+lte_is_network_service_available	lib/if_lte.c	/^lte_is_network_service_available (void)$/;"	f
+lte_lookup_string_from_buf	lib/lte/serial.c	/^lte_lookup_string_from_buf(char *pSrc, int length, char *pDst)$/;"	f
+lte_ota_from_kt	lib/if_lte.c	/^lte_ota_from_kt (struct cli *cli)$/;"	f
+lte_ota_from_skt	lib/if_lte.c	/^lte_ota_from_skt (struct cli *cli)$/;"	f
+lte_reset	lib/if_lte.c	/^lte_reset (void)$/;"	f
+lte_send_serial	lib/if_lte.c	/^lte_send_serial (char *cmd, char *pbuf)$/;"	f
+lte_send_sms	lib/if_lte.c	/^lte_send_sms (struct cli *cli, char *pNumber, char *pMsg)$/;"	f
+lte_set_sysLED	lib/if_lte.c	/^lte_set_sysLED (int cmd)$/;"	f
+lte_set_sysLTE	lib/if_lte.c	/^lte_set_sysLTE (int cmd)$/;"	f
+lte_show_apn	lib/if_lte.c	/^lte_show_apn (struct cli *cli)$/;"	f
+lte_show_apn_detail	lib/if_lte.c	/^lte_show_apn_detail (struct cli *cli)$/;"	f
+lte_show_status	lib/if_lte.c	/^lte_show_status(struct cli *cli, ZEBOS_LTE_MODULE_t *mod)$/;"	f
+lte_show_status_detail	lib/if_lte.c	/^lte_show_status_detail (struct cli *cli)$/;"	f
+lte_state_print	main.c	/^void lte_state_print (struct cli *cli)$/;"	f
+lte_state_read	main.c	/^void lte_state_read (struct cli *cli)$/;"	f
+lte_strtok	lib/lte/serial.c	/^lte_strtok(char *pbuf, int buf_size, int index, char *pret)$/;"	f
+lte_strtok_by_user	lib/lte/serial.c	/^lte_strtok_by_user(char *pbuf, int buf_size, int index, char *pret, char *ptok)$/;"	f
+lte_xmit_serial	lib/lte/serial.c	/^lte_xmit_serial (char *pMsgCmd, char *pRetStr)$/;"	f
+lte_xmit_sms	lib/lte/serial.c	/^lte_xmit_sms (char *pMsgCmd, char *pRetStr, int wait)$/;"	f
+ltedebug	lib/if_lte.c	60;"	d	file:
+ltedebug	lib/lte/serial.c	13;"	d	file:
+ltedebug	lib/lte/serial.h	9;"	d
+main	main.c	/^int main(int argc, char *argv[])$/;"	f
+manufacturer	lib/if_lte.h	/^    char manufacturer[MAX_BUF_LENGTH];  \/\/ 제조사$/;"	m	struct:ZEBOS_LTE_MODULE
+max_dl	lib/if_lte.h	/^  unsigned int max_dl;  \/\/ Maximum data rate (bytes\/sec)$/;"	m	struct:LTE_RF_DEBUG_SHM
+max_ul	lib/if_lte.h	/^  unsigned int max_ul;  \/\/ Maximum sent data rate (bytes\/sec)$/;"	m	struct:LTE_RF_DEBUG_SHM
+mcs	lib/if_lte.h	/^  unsigned short mcs[32];$/;"	m	struct:LTE_RF_DEBUG_SHM
+name	lib/if_lte.h	/^    char *name;$/;"	m	struct:_lte_state
+name	lib/if_lte.h	/^    char name[MAX_BUF_LENGTH];          \/\/ 네트워크 이름 (KT \/ SKT \/ LGU+)$/;"	m	struct:ZEBOS_LTE_MODULE
+now_state	lib/if_lte.h	/^    int now_state;$/;"	m	struct:_ext_state
+ntlm200q_state_list	lib/lte/ntlm200q.c	/^LTE_STATE ntlm200q_state_list[] = {$/;"	v
+ntlm200q_sysmode_list	lib/lte/ntlm200q.c	/^LTE_STATE ntlm200q_sysmode_list[] = {$/;"	v
+number	lib/if_lte.h	/^    char number[MAX_BUF_LENGTH];        \/\/ 전화번호$/;"	m	struct:ZEBOS_LTE_MODULE
+number2	lib/if_lte.h	/^    char number2[MAX_BUF_LENGTH];       \/\/ 전화번호2$/;"	m	struct:ZEBOS_LTE_MODULE
+open_lgm2m_sock	lib/lte/lgm2m_type2.c	/^open_lgm2m_sock(void)$/;"	f	file:
+physical_cell_id	lib/if_lte.h	/^  unsigned short physical_cell_id;$/;"	m	struct:LTE_RF_DEBUG_SHM
+prach	lib/if_lte.h	/^  signed int prach;  \/\/ -55 ~ +23 (dBm unit)$/;"	m	struct:LTE_RF_DEBUG_SHM
+prev_state	lib/if_lte.h	/^    int prev_state;$/;"	m	struct:_ext_state
+pucch	lib/if_lte.h	/^  signed int pucch;  \/\/ -55 ~ +23 (dBm unit)$/;"	m	struct:LTE_RF_DEBUG_SHM
+pusch	lib/if_lte.h	/^  signed int pusch;  \/\/ -55 ~ +23 (dBm unit)$/;"	m	struct:LTE_RF_DEBUG_SHM
+read_amp5210_apn	lib/lte/amp5210.c	/^read_amp5210_apn (lte_apn_info_t *apn_info)$/;"	f
+read_anydata_apn	lib/lte/anydata.c	/^read_anydata_apn (lte_apn_info_t *apn_info)$/;"	f
+read_anydata_network_status	lib/lte/anydata.c	/^read_anydata_network_status(ZEBOS_LTE_MODULE_t *mod)$/;"	f
+read_kmkl200_apn	lib/lte/kmkl200.c	/^read_kmkl200_apn (lte_apn_info_t *apn_info)$/;"	f
+read_kmkl200_network_status	lib/lte/kmkl200.c	/^read_kmkl200_network_status (void)$/;"	f
+read_l300s_apn	lib/lte/l300s.c	/^read_l300s_apn (lte_apn_info_t *apn_info)$/;"	f
+read_l300s_network_status	lib/lte/l300s.c	/^read_l300s_network_status (void)$/;"	f
+read_lgm2m_pegasus_apn	lib/lte/lgm2m_pegasus.c	/^read_lgm2m_pegasus_apn (lte_apn_info_t *apn_info)$/;"	f
+read_lgm2m_pegasus_network_status	lib/lte/lgm2m_pegasus.c	/^read_lgm2m_pegasus_network_status (void)$/;"	f
+read_lgm2m_type1_apn	lib/lte/lgm2m_type1.c	/^read_lgm2m_type1_apn (lte_apn_info_t *apn_info)$/;"	f
+read_lgm2m_type1_network_status	lib/lte/lgm2m_type1.c	/^read_lgm2m_type1_network_status (void)$/;"	f
+read_lgm2m_type2_apn	lib/lte/lgm2m_type2.c	/^read_lgm2m_type2_apn (lte_apn_info_t *apn_info)$/;"	f
+read_lgm2m_type2_network_status	lib/lte/lgm2m_type2.c	/^read_lgm2m_type2_network_status (void)$/;"	f
+read_ntlm200q_apn	lib/lte/ntlm200q.c	/^read_ntlm200q_apn (lte_apn_info_t *apn_info)$/;"	f
+read_ntlm200q_network_status	lib/lte/ntlm200q.c	/^read_ntlm200q_network_status (void)$/;"	f
+read_tm400_apn	lib/lte/tm400.c	/^read_tm400_apn (lte_apn_info_t *apn_info)$/;"	f
+read_tm400_network_status	lib/lte/tm400.c	/^read_tm400_network_status (void)$/;"	f
+result	lib/if_lte.h	/^  int  result;$/;"	m	struct:kt_iot_kni_info
+rrc_list	lib/lte/kmkl200.c	/^kni_sysinfo_t rrc_list[] = {$/;"	v
+rsrp	lib/if_lte.h	/^    int rsrp;                           \/\/ 신호세기$/;"	m	struct:ZEBOS_LTE_MODULE
+rsrp	lib/if_lte.h	/^  short rsrp;$/;"	m	struct:LTE_RF_DEBUG_SHM
+rsrq	lib/if_lte.h	/^    int rsrq;                           \/\/ 신호세기$/;"	m	struct:ZEBOS_LTE_MODULE
+rsrq	lib/if_lte.h	/^  short rsrq;$/;"	m	struct:LTE_RF_DEBUG_SHM
+rssi	lib/if_lte.h	/^    int rssi;                           \/\/ 신호세기$/;"	m	struct:ZEBOS_LTE_MODULE
+rssi	lib/if_lte.h	/^  short rssi;$/;"	m	struct:LTE_RF_DEBUG_SHM
+ruimid	lib/if_lte.h	/^    char ruimid[MAX_BUF_LENGTH];        \/\/ Anydata 모듈의 RUIMID 값$/;"	m	struct:ZEBOS_LTE_MODULE
+send_lgm2m_sock	lib/lte/lgm2m_type2.c	/^send_lgm2m_sock(int sockfd, char *pMsgCmd, char *pRetStr)$/;"	f	file:
+sendmsg_amp5210	lib/lte/amp5210.c	/^sendmsg_amp5210(struct cli *cli, ZEBOS_LTE_MODULE_t *mod, char *pNumber, char *pMsg)$/;"	f
+sendmsg_kmkl200	lib/lte/kmkl200.c	/^sendmsg_kmkl200(struct cli *cli, ZEBOS_LTE_MODULE_t *mod, char *pNumber, char *pMsg)$/;"	f
+sendmsg_l300s	lib/lte/l300s.c	/^sendmsg_l300s(struct cli *cli, ZEBOS_LTE_MODULE_t *mod, char *pNumber, char *pMsg)$/;"	f
+sendmsg_mec	lib/lte/mec.c	/^sendmsg_mec(struct cli *cli, ZEBOS_LTE_MODULE_t *mod, char *pNumber, char *pMsg)$/;"	f
+sendmsg_ntlm200q	lib/lte/ntlm200q.c	/^sendmsg_ntlm200q(struct cli *cli, ZEBOS_LTE_MODULE_t *mod, char *pNumber, char *pMsg)$/;"	f
+sendmsg_tm400	lib/lte/tm400.c	/^sendmsg_tm400(struct cli *cli, ZEBOS_LTE_MODULE_t *mod, char *pNumber, char *pMsg)$/;"	f
+set_amp5210_apn	lib/lte/amp5210.c	/^set_amp5210_apn (int type, char *apn_url)$/;"	f
+set_amp5210_ota	lib/lte/amp5210.c	/^set_amp5210_ota (int type)$/;"	f
+set_anydata_apn	lib/lte/anydata.c	/^set_anydata_apn (int type, char *apn_url)$/;"	f
+set_kmkl200_apn	lib/lte/kmkl200.c	/^set_kmkl200_apn (int type, char *apn_url)$/;"	f
+set_kmkl200_ota	lib/lte/kmkl200.c	/^set_kmkl200_ota (int type)$/;"	f
+set_l300s_apn	lib/lte/l300s.c	/^set_l300s_apn (int type, char *apn_url)$/;"	f
+set_l300s_ota	lib/lte/l300s.c	/^set_l300s_ota (int type)$/;"	f
+set_lgm2m_pegasus_apn	lib/lte/lgm2m_pegasus.c	/^set_lgm2m_pegasus_apn (int type, char *apn_url)$/;"	f
+set_lgm2m_type1_apn	lib/lte/lgm2m_type1.c	/^set_lgm2m_type1_apn (int type, char *apn_url)$/;"	f
+set_lgm2m_type2_apn	lib/lte/lgm2m_type2.c	/^set_lgm2m_type2_apn (int type, char *apn_url)$/;"	f
+set_ntlm200q_apn	lib/lte/ntlm200q.c	/^set_ntlm200q_apn (int type, char *apn_url)$/;"	f
+set_ntlm200q_ota	lib/lte/ntlm200q.c	/^set_ntlm200q_ota (int type)$/;"	f
+set_tm400_apn	lib/lte/tm400.c	/^set_tm400_apn (int type, char *apn_url)$/;"	f
+set_tm400_ota	lib/lte/tm400.c	/^set_tm400_ota (int type)$/;"	f
+short_apn	lib/if_lte.h	/^  char short_apn[256];$/;"	m	struct:lte_apn_info
+sim_list	lib/lte/kmkl200.c	/^kni_sysinfo_t sim_list[] = {$/;"	v
+sinr	lib/if_lte.h	/^    int sinr;                           \/\/ 신호세기$/;"	m	struct:ZEBOS_LTE_MODULE
+sinr	lib/if_lte.h	/^  short sinr;$/;"	m	struct:LTE_RF_DEBUG_SHM
+state	lib/if_lte.h	/^    int state;                          \/\/ 연결상태$/;"	m	struct:ZEBOS_LTE_MODULE
+state	lib/if_lte.h	/^    int state;$/;"	m	struct:_lte_state
+state	lib/if_lte.h	/^  unsigned char state;$/;"	m	struct:LTE_RF_DEBUG_SHM
+state_name	lib/if_lte.h	/^    char state_name[MAX_BUF_LENGTH];    \/\/ 연결상태 이름(제조사마다 다름)$/;"	m	struct:ZEBOS_LTE_MODULE
+subject	lib/if_lte.h	/^  char subject[32];$/;"	m	struct:kt_iot_kni_info
+sysmode_list	lib/lte/kmkl200.c	/^kni_sysinfo_t sysmode_list[] = {$/;"	v
+tac	lib/if_lte.h	/^  unsigned char tac[2];$/;"	m	struct:LTE_RF_DEBUG_SHM
+tin_list	lib/lte/kmkl200.c	/^kni_sysinfo_t tin_list[] = {$/;"	v
+tm400_state_list	lib/lte/tm400.c	/^LTE_STATE tm400_state_list[] = {$/;"	v
+total_cw1	lib/if_lte.h	/^  unsigned short total_cw1;$/;"	m	struct:LTE_RF_DEBUG_SHM
+total_cw2	lib/if_lte.h	/^  unsigned short total_cw2;$/;"	m	struct:LTE_RF_DEBUG_SHM
+total_dl	lib/if_lte.h	/^  unsigned int total_dl; \/\/ Total received data (in bytes)$/;"	m	struct:LTE_RF_DEBUG_SHM
+total_ul	lib/if_lte.h	/^  unsigned int total_ul; \/\/ Total sent data (in bytes)$/;"	m	struct:LTE_RF_DEBUG_SHM
+tx_power	lib/if_lte.h	/^  short tx_power;$/;"	m	struct:LTE_RF_DEBUG_SHM
+type	lib/if_lte.h	/^    char type[MAX_BUF_LENGTH];          \/\/ LTE \/ WCDMA$/;"	m	struct:ZEBOS_LTE_MODULE

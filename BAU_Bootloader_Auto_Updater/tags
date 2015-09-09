@@ -1,0 +1,99 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AR	Makefile	/^AR=$(CROSS)ar$/;"	m
+BUF_SIZE	main.c	13;"	d	file:
+BUF_SIZE	use_mtd0.c	11;"	d	file:
+CC	Makefile	/^CC=$(CROSS)gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS=-Wall -g$/;"	m
+CPP	Makefile	/^CPP=$(CROSS)g++$/;"	m
+CROSS	Makefile	/^CROSS=\/usr\/local\/Cavium_Networks\/OCTEON-SDK-2.3\/tools\/bin\/mips64-octeon-linux-gnu-$/;"	m
+DEV_MTD1_PATH	message.h	5;"	d
+END_TAG	message.h	3;"	d
+ERROR	main.c	18;"	d	file:
+ERROR	use_mtd0.c	16;"	d	file:
+ERROR_LINE	message.h	11;"	d
+ERR_BOOTLOADER_DOWNLOAD_FAILED	message.h	14;"	d
+ERR_NOT_FOUND_BOOTLOADER_PATH	message.h	16;"	d
+ERR_NOT_FOUND_MTDBLOCK	message.h	12;"	d
+ERR_NOT_FOUND_MTDUTILS	message.h	13;"	d
+ERR_NOT_FOUND_TAG	message.h	15;"	d
+ERR_PRINT	message.h	17;"	d
+FAILSAFE_UBOOT	use_mtd0.c	18;"	d	file:
+FIND_UBOOT_TAG	use_mtd0.c	21;"	d	file:
+FLASH_ERASEALL_BIN	message.h	9;"	d
+GIT_TAG	message.h	1;"	d
+LD	Makefile	/^LD=$(CROSS)ld$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS=$/;"	m
+LINE	message.h	19;"	d
+MAX_UBOOT_TAG	use_mtd0.c	20;"	d	file:
+NORMAL_UBOOT	use_mtd0.c	19;"	d	file:
+NOTICE_PRINT	message.h	23;"	d
+NOTI_LATEST_BOOTLOADER	message.h	21;"	d
+NOTI_NOT_FOUND_TAG	message.h	20;"	d
+OBJS	Makefile	/^OBJS =$(SRCS:.c=.o)$/;"	m
+OK	main.c	17;"	d	file:
+OK	use_mtd0.c	15;"	d	file:
+SRCS	Makefile	/^SRCS := $(notdir $(SRCS)) $/;"	m
+SRCS	Makefile	/^SRCS = $(foreach dir, . $(SRCDIR1) $(SRCDIR2), $(wildcard $(dir)\/*.c))             $/;"	m
+STAMP_LENGTH	main.c	15;"	d	file:
+STAMP_LENGTH	use_mtd0.c	13;"	d	file:
+STAMP_TAG	message.h	2;"	d
+STATE_ASK_BOOTLOADER_UPDATE	main.c	24;"	d	file:
+STATE_BOOTLOADER_UPDATE	main.c	25;"	d	file:
+STATE_CHK_MACHIN_BOOTLOADER	main.c	21;"	d	file:
+STATE_COMPARE_BOOTLOADER	main.c	23;"	d	file:
+STATE_DOWDLOAD_SVR_BOOTLOADER	main.c	22;"	d	file:
+STATE_ERROR_EXIT	main.c	28;"	d	file:
+STATE_INIT	main.c	20;"	d	file:
+STATE_NORMAL_EXIT	main.c	26;"	d	file:
+STATE_PRINT	message.h	25;"	d
+STATE_UPDATE_COMPLETE	main.c	27;"	d	file:
+STRING_LENGTH	main.c	14;"	d	file:
+STRING_LENGTH	use_mtd0.c	12;"	d	file:
+STRIP	Makefile	/^STRIP=$(CROSS)strip$/;"	m
+SYS_MTD1_NAME_PATH	message.h	6;"	d
+TARGET	Makefile	/^TARGET=bau_$(VERSION)$/;"	m
+TMP_UBOOT_PATH	message.h	7;"	d
+UPDATE_SERVER_PATH	message.h	8;"	d
+VERSION	Makefile	/^VERSION=2.0$/;"	m
+addr	use_mtd0.c	/^  unsigned int addr;$/;"	m	struct:find_uboot_info	file:
+api_flash	use_mtd0.c	/^int api_flash(int argc, char *argv[])$/;"	f
+api_flash_erase	flash_erase.c	/^int api_flash_erase(int argc,char *argv[])$/;"	f
+block_0	use_mtd0.c	/^  int block_0;$/;"	m	struct:dev_mem_info	file:
+block_1	use_mtd0.c	/^  int block_1;$/;"	m	struct:dev_mem_info	file:
+board	use_mtd0.c	/^  int board;$/;"	m	struct:dev_mem_info	file:
+board_type	type.h	/^  int board_type;$/;"	m	struct:model_list
+board_type	use_mtd0.c	/^  int board_type;$/;"	m	struct:model_list	file:
+boot_list	type.h	/^struct model_list boot_list[] =$/;"	v	typeref:struct:model_list
+bootloader_name	type.h	/^  char bootloader_name[32];$/;"	m	struct:model_list
+bootloader_name	use_mtd0.c	/^  char bootloader_name[32];$/;"	m	struct:model_list	file:
+convert_bootloader_path	main.c	/^convert_bootloader_path(int board_type, char *bootloader_path)$/;"	f	file:
+dev_mem_info	use_mtd0.c	/^struct dev_mem_info$/;"	s	file:
+find_flash_sector	use_mtd0.c	/^find_flash_sector (unsigned int dest_addr)$/;"	f	file:
+find_tag	use_mtd0.c	/^find_tag (char *pfile, int max_len, struct find_uboot_info *plist)$/;"	f	file:
+find_uboot_info	use_mtd0.c	/^struct find_uboot_info$/;"	s	file:
+get_board_type	main.c	/^get_board_type (void)$/;"	f	file:
+get_bootloader_tag	main.c	/^get_bootloader_tag (char *pfile, struct stamp_tag *psrc)$/;"	f	file:
+get_file_size	use_mtd0.c	/^get_file_size (char *pfile)$/;"	f	file:
+is_download_bootloader	main.c	/^is_download_bootloader(int board_type, char *bootloader_path)$/;"	f	file:
+is_ready_mtdblock	main.c	/^is_ready_mtdblock (void)$/;"	f	file:
+is_ready_mtdutils	main.c	/^is_ready_mtdutils (void)$/;"	f	file:
+main	main.c	/^int main(int argc, char *argv[])$/;"	f
+mem_list	use_mtd0.c	/^struct dev_mem_info mem_list[] =$/;"	v	typeref:struct:dev_mem_info
+model_list	type.h	/^struct model_list$/;"	s
+model_list	use_mtd0.c	/^struct model_list$/;"	s	file:
+non_region_erase	flash_erase.c	/^int non_region_erase(int Fd, int start, int count, int unlock)$/;"	f
+region_erase	flash_erase.c	/^int region_erase(int Fd, int start, int count, int unlock, int regcount)$/;"	f
+remove_uboot	use_mtd0.c	/^remove_uboot (struct find_uboot_info *plist)$/;"	f	file:
+size_0	use_mtd0.c	/^  int size_0;$/;"	m	struct:dev_mem_info	file:
+size_1	use_mtd0.c	/^  int size_1;$/;"	m	struct:dev_mem_info	file:
+stamp	type.h	/^  char stamp[12];$/;"	m	struct:stamp_tag
+stamp_tag	type.h	/^struct stamp_tag$/;"	s
+tag	use_mtd0.c	/^  int tag;$/;"	m	struct:find_uboot_info	file:
+uboot_tag	use_mtd0.c	/^char uboot_tag[] =$/;"	v
+update_bootloader	main.c	/^update_bootloader (char *bootloader_path)$/;"	f	file:
+ver	type.h	/^  char ver[12];$/;"	m	struct:stamp_tag

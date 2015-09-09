@@ -1,0 +1,11 @@
+
+1.0 : 
+프로젝트 시작.
+mtd 블럭이 mtd0(failsafe), mtd1(uboot), mtd2(not used)로 나뉘어 있을 때,
+mtd1의 내용을 지우고 uboot을 업데이트하도록 하였음.
+
+2.0 :
+mtd 블럭이 나뉘어져 있지 않을 때
+mtd0를 읽어와서 uboot tag를 찾아서 자동으로 
+uboot 영역을 삭제할 수 있도록 하는 기능 추가.
+
