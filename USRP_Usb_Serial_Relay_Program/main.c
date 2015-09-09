@@ -90,7 +90,7 @@ void use_all_usbport (void)
 	int aux_out_fd=1;
 	char read_data0[255], read_data1[255], read_aux[255];
 
-	aux_fd = open_serial_port("/dev/ttyS0");
+	aux_fd = open_serial_port("/dev/ttyS1");
 
 	while(1)
 	{
@@ -162,7 +162,7 @@ void use_standard_usbport (void)
 	//the ttyusb1 is mostly a console port.. but I'm not sure....
 	char read_data1[255], read_aux[255];
 
-	aux_fd = open_serial_port("/dev/ttyS0");
+	aux_fd = open_serial_port("/dev/ttyS1");
 
 	while(1)
 	{
@@ -190,9 +190,7 @@ void use_standard_usbport (void)
 		read_len_aux = read_data(aux_fd, read_aux);
 
 		if(read_len_aux > 0)
-		{
 		  write(ttyusb1_fd, read_aux, read_len_aux);
-		}	
 	}
 }
 
