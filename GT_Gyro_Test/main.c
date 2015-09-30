@@ -19,8 +19,9 @@
 #define OK                      0
 #define ERROR                   -1
 #define AUX_CONSOLE_INF         "/dev/ttyS1" 
-#define SENSOR_REQUEST_MESSAGE  "R"
-#define SENSOR_INIT_MESSAGE  "I"
+#define SENSOR_REQUEST_MESSAGE  0
+#define SENSOR_INIT_MESSAGE     1
+#define SENSOR_LIST_MESSAGE     2
 
 
 void console_print(const char *fmt, ...)
@@ -51,118 +52,6 @@ void console_print(const char *fmt, ...)
 #define PRINT_MSG(msg...)              {console_print(msg);fflush(stdout);}
 
 
-
-/* Comment ********************************************************************
- * GYRO 센서를 체크합니다.
- *
- */
-int gyro_test(void)
-{
-  int fd;
-  struct termios newtio;
-  char buf_msg[64];
-
-  fd = open(AUX_CONSOLE_INF, O_RDWR | O_NOCTTY );
-
-  if (fd < 0) {
-    PRINT_MSG("SENSOR\t>>>>>>\tAUX ERROR\n\r");
-    return ERROR;
-  }
-
-  tcgetattr(fd,&newtio);
-  newtio.c_cflag = B9600 | CS8 | CLOCAL | CREAD;
-  newtio.c_iflag = IGNPAR;
-  newtio.c_oflag = 0;
-  // set input mode (non-canonical, no echo,...)
-  newtio.c_lflag = 0;
-
-  newtio.c_cc[VTIME] = 1;
-  newtio.c_cc[VMIN] = 0;
-
-  tcflush(fd, TCIFLUSH);
-  tcsetattr(fd,TCSANOW,&newtio);
-
-  // send it to the serial port
-  write(fd, SENSOR_REQUEST_MESSAGE, strlen(SENSOR_REQUEST_MESSAGE));
-
-  sleep (1);
-
-  // read it from the serial port.
-  memset(buf_msg, 0x00, sizeof(buf_msg));
-  read(fd, buf_msg, sizeof(buf_msg));
-  //PRINT_MSG("\n\r %s", buf_msg);
-
-  close(fd);
-
-  if (!strncmp("C", buf_msg, strlen("C")))
-  {
-    PRINT_MSG("SENSOR\t>>>>>>\tCHANGED !!!!!\n\r");
-    return OK;
-  }
-  else if (!strncmp("N", buf_msg, strlen("N")))
-  {
-    PRINT_MSG("SENSOR\t>>>>>>\tNORMAL\n\r");
-    return OK;
-  }
-  else
-  {
-    PRINT_MSG("SENSOR\t>>>>>>\tREQUEST ERROR\n\r");
-    return OK;
-  }
-  
-  return ERROR;
-}
-
-
-
-/* Comment ********************************************************************
- * GYRO 센서를 체크합니다.
- *
- */
-int gyro_list_test(void)
-{
-  int fd;
-  struct termios newtio;
-  char buf_msg[64];
-
-  fd = open(AUX_CONSOLE_INF, O_RDWR | O_NOCTTY );
-
-  if (fd < 0) {
-    PRINT_MSG("SENSOR\t>>>>>>\tAUX ERROR\n\r");
-    return ERROR;
-  }
-
-  tcgetattr(fd,&newtio);
-  newtio.c_cflag = B9600 | CS8 | CLOCAL | CREAD;
-  newtio.c_iflag = IGNPAR;
-  newtio.c_oflag = 0;
-  // set input mode (non-canonical, no echo,...)
-  newtio.c_lflag = 0;
-
-  newtio.c_cc[VTIME] = 1;
-  newtio.c_cc[VMIN] = 0;
-
-  tcflush(fd, TCIFLUSH);
-  tcsetattr(fd,TCSANOW,&newtio);
-
-  // send it to the serial port
-  write(fd, "R", 1);
-
-  sleep (1);
-
-  // read it from the serial port.
-  memset(buf_msg, 0x00, sizeof(buf_msg));
-  read(fd, buf_msg, sizeof(buf_msg));
-  //PRINT_MSG("\n\r %s", buf_msg);
-
-  close(fd);
-  PRINT_MSG("SENSOR LIST : %s\n\r",buf_msg);
-
-  return OK;
-}
-
-
-
 /* Comment ********************************************************************
  * GYRO 상태값을 초기화 하도록 합니다.
  *
@@ -181,7 +70,7 @@ int gyro_init(void)
   }
 
   tcgetattr(fd,&newtio);
-  newtio.c_cflag = B9600 | CS8 | CLOCAL | CREAD;
+  newtio.c_cflag = B2400 | CS8 | CLOCAL | CREAD;
   newtio.c_iflag = IGNPAR;
   newtio.c_oflag = 0;
   // set input mode (non-canonical, no echo,...)
@@ -194,7 +83,7 @@ int gyro_init(void)
   tcsetattr(fd,TCSANOW,&newtio);
 
   // send it to the serial port
-  write(fd, SENSOR_INIT_MESSAGE, strlen(SENSOR_INIT_MESSAGE));
+  write(fd, "I", 1);
 
   sleep (1);
 
@@ -221,6 +110,76 @@ int gyro_init(void)
 
 
 
+/* Comment ********************************************************************
+ * GYRO 센서를 체크합니다.
+ *
+ */
+int gyro_test (char mode)
+{
+  int fd;
+  struct termios newtio;
+  char buf_msg[64];
+
+  fd = open(AUX_CONSOLE_INF, O_RDWR | O_NOCTTY );
+
+  if (fd < 0) {
+    PRINT_MSG("SENSOR\t>>>>>>\tAUX ERROR\n\r");
+    return ERROR;
+  }
+
+  tcgetattr(fd,&newtio);
+  newtio.c_cflag = B2400 | CS8 | CLOCAL | CREAD;
+  newtio.c_iflag = IGNPAR;
+  newtio.c_oflag = 0;
+  // set input mode (non-canonical, no echo,...)
+  newtio.c_lflag = 0;
+
+  newtio.c_cc[VTIME] = 1;
+  newtio.c_cc[VMIN] = 0;
+
+  tcflush(fd, TCIFLUSH);
+  tcsetattr(fd,TCSANOW,&newtio);
+
+  // send it to the serial port
+  if (mode == SENSOR_LIST_MESSAGE)
+    write(fd, "L", 1);
+  else 
+    write(fd, "R", 1);
+
+  sleep (1);
+
+  // read it from the serial port.
+  memset(buf_msg, 0x00, sizeof(buf_msg));
+  read(fd, buf_msg, sizeof(buf_msg));
+
+  close(fd);
+
+  if (mode == SENSOR_LIST_MESSAGE)
+  {
+    PRINT_MSG("SENSOR :  %s \n\r ", buf_msg);
+    return OK;
+  }
+
+  if (!strncmp("C", buf_msg, strlen("C")))
+  {
+    PRINT_MSG("SENSOR\t>>>>>>\tStolen !!!!!!!!!!!!!!!!!\n\r");
+    return OK;
+  }
+  else if (!strncmp("N", buf_msg, strlen("N")))
+  {
+    PRINT_MSG("SENSOR\t>>>>>>\tNormal \n\r");
+    return OK;
+  }
+  else
+  {
+    PRINT_MSG("SENSOR\t>>>>>>\tREQUEST ERROR\n\r");
+    return OK;
+  }
+  
+  return ERROR;
+}
+
+
 
 /* Comment ********************************************************************
  * main function.
@@ -228,13 +187,28 @@ int gyro_init(void)
  */
 int main(int argc, char *argv[])
 {
+  if (argc == 2 )
+  {
+    if (!strncmp(argv[1], "L", 1))
+    {
+      for (;;)    
+      {
+        gyro_test (SENSOR_LIST_MESSAGE);
+      }
+    }
+    else if (!strncmp(argv[1], "I", 1))
+    {
+      for (;;)    
+      {
+        gyro_init();
+      }
+    }
+
+  }
+
   for (;;)
     {
-      //gyro_test();
-      gyro_test ();
-      gyro_test ();
-      gyro_test ();
-      gyro_init ();
+      gyro_test (SENSOR_REQUEST_MESSAGE);
     }
 
   return -1;
